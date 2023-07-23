@@ -25,6 +25,7 @@ section {
   align-items: center;
   margin-top: 10px;
 }
+
 .section-heading:hover {
   background-color: #f2e5e5;
 }
@@ -36,15 +37,18 @@ section {
   list-style: none;
   text-align: center;
 }
+
 .Horizontal_list ul li {
   display: inline-block;
   margin: 18px 17px 0 0;
 }
+
 .Horizontal_list ul li a {
   color: rgb(184, 187, 187);
   font-size: 1.4em;
   text-decoration: none;
 }
+
 .Horizontal_list nav ul li a:hover {
   color: white;
   border-bottom: 1px solid;
@@ -60,13 +64,16 @@ section {
   font-weight: 600;
   margin-bottom: 1.4rem;
 }
+
 #My_Name:hover {
   color: #a6a6ab;
   transition: color 1s;
 }
+
 #nameandicons {
   margin-top: 7.5rem;
 }
+
 #social_icons a i {
   height: 22px;
   width: 22px;
@@ -76,9 +83,11 @@ section {
   margin-left: 25px;
   color: rgb(255, 248, 248);
 }
+
 #social_icons a i:hover {
   box-shadow: 0px 0px 6px 4px rgb(100, 158, 192);
 }
+
 #My_pic img {
   position: relative;
   height: 100%;
@@ -87,6 +96,7 @@ section {
   border: 3px solid white;
   box-shadow: 1px 1px 5px 2px rgb(182, 180, 180);
 }
+
 #My_pic {
   height: 180px;
   width: 180px;
@@ -110,10 +120,12 @@ section {
   background-color: rgb(226, 238, 238);
   align-items: center;
 }
-#skills > div {
+
+#skills>div {
   margin-top: 10px;
   margin-bottom: 40px;
 }
+
 .section-heading {
   width: auto;
   margin: 50px auto 50px;
@@ -121,9 +133,11 @@ section {
   color: #2857a4;
   padding-top: 10px;
 }
-.section-heading > span {
+
+.section-heading>span {
   margin-right: 5px;
 }
+
 .skill-sec {
   width: clamp(75vw, 65vw, 65vw);
   height: auto;
@@ -133,6 +147,7 @@ section {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+
 .skill-display {
   width: 11rem;
   height: 2.5rem;
@@ -141,35 +156,57 @@ section {
   font-size: 1.5rem;
   color: white;
   background-color: lightgrey;
-  border-radius: 1.4rem;
+  border-radius: 1.3rem;
   box-shadow: 0px 1px 4px 1px rgb(173, 168, 168);
 }
+
 .skill-level {
   box-shadow: 0px 1px 4px 1px rgb(155, 149, 149);
-  border-radius: 1.4rem 0 0 1.4rem;
-  height: 100%;
+  border-radius: 1.3rem;
+  height: inherit;
   text-align: left;
   line-height: 35px;
-  padding-left: 10px;
+  padding-left: 8px;
+  /* animation: scrolling 2.5s 1; */
 }
 
+/* @keyframes scrolling {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+} */
+
 /* Skill Levels */
-.skill-display #cpp {
+#cpp {
+  max-width: 60%;
   background-color: rgb(240, 183, 26);
 }
-.skill-display #java {
+
+#java {
+  max-width: 20%;
   background-color: rgb(173, 137, 238);
 }
-.skill-display #python {
+
+#python {
+  max-width: 50%;
   background-color: rgb(248, 90, 90);
 }
-.skill-display #html {
+
+#html {
+  max-width: 85%;
   background-color: rgb(80, 149, 240);
 }
-.skill-display #css {
+
+#css {
+  max-width: 70%;
   background-color: rgb(200, 231, 85);
 }
-.skill-display #javascript {
+
+#javascript {
+  max-width: 40%;
   background-color: rgb(240, 93, 183);
 }
 
@@ -179,9 +216,11 @@ section {
   position: relative;
   margin: auto;
 }
+
 .timeline {
   margin-bottom: 50px;
 }
+
 .timeline_box {
   position: relative;
   width: 40%;
@@ -190,9 +229,11 @@ section {
   left: 5%;
   text-align: right;
 }
+
 .timeline_box:nth-child(2n) {
   left: 55%;
 }
+
 .divider_line {
   position: absolute;
   height: 55%;
@@ -202,10 +243,12 @@ section {
   left: 50%;
   top: 25%;
 }
+
 #aeroplane {
   position: sticky;
   top: 15%;
 }
+
 #aeroplane i {
   transform: rotate(90deg);
   margin: -32px -3px 0px 0px;
@@ -214,17 +257,20 @@ section {
   color: #2857a4;
   font-size: 1.2rem;
 }
-.timeline_logo > i {
+
+.timeline_logo>i {
   font-size: 1.4rem;
   margin: 0;
   position: absolute;
   left: 1%;
 }
+
 .course {
   font-size: 1.3rem;
   color: rgb(54, 54, 160);
   margin-bottom: px;
 }
+
 .institute {
   margin-bottom: 0px;
   color: #eb822d;
@@ -232,12 +278,14 @@ section {
   font-size: 1.2rem;
   margin: 2px;
 }
+
 .Duration {
   color: #a19999;
   font-weight: 100;
   font-size: 1.1rem;
   margin: 0px;
 }
+
 .edu_details {
   font-size: 1.07rem;
   padding: 2px;
@@ -250,10 +298,12 @@ section {
 #certificates {
   background-color: rgb(226, 238, 238);
 }
-#certificates > div {
+
+#certificates>div {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
 .container {
   box-sizing: border-box;
   height: auto;
@@ -263,6 +313,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .certificate_box {
   margin: 10px 50px 70px;
   position: relative;
@@ -272,11 +323,13 @@ section {
   border-radius: 2%;
   box-shadow: 0px 0px 10px 4px rgb(116, 110, 110);
 }
+
 .certificate_box img {
   border-radius: 2%;
   height: 100%;
   width: 100%;
 }
+
 .certificate_box:hover {
   border: 3px rgb(228, 200, 205) solid;
   transform: scale(110%);
@@ -287,17 +340,20 @@ section {
 #portfolio {
   margin-bottom: 3rem;
 }
+
 .portfolio_box {
   margin: 10px 40px 30px;
   max-height: 150px;
   max-width: 150px;
   padding: 20px;
 }
+
 .portfolio_box:hover {
   box-shadow: 0px 0px 5px 2px rgb(102, 91, 91);
   background-color: rgb(221, 226, 226);
   opacity: 0.7;
 }
+
 .portfolio_box img {
   width: 100%;
   height: 100%;
@@ -310,9 +366,11 @@ section {
   color: white;
   padding-bottom: 50px;
 }
+
 #contact h1 span {
   color: white;
 }
+
 .contact_container {
   padding: 10px;
   display: flex;
@@ -320,15 +378,19 @@ section {
   justify-content: space-around;
   margin-bottom: 20px;
 }
+
 .contact_box {
   width: 50%;
 }
-.contact_box > div {
+
+.contact_box>div {
   margin-left: 5%;
 }
+
 .my_details_container {
   width: 40%;
 }
+
 #contact_form input,
 textarea {
   max-width: 90%;
@@ -342,6 +404,7 @@ textarea {
   line-height: 1.7;
   font-size: 1.05rem;
 }
+
 #contact_form button {
   background: transparent;
   font-size: 0.95rem;
@@ -357,16 +420,20 @@ textarea {
   padding: 0.6rem 0.7rem 0.6rem;
   text-transform: uppercase;
 }
+
 #contact_form button:hover {
   background: white;
   color: #266acfe0;
 }
+
 .my-details-info {
   margin: 10px;
 }
+
 .my-details-info span {
   margin-left: 8px;
 }
+
 .my-details-info i {
   font-size: 15px;
 }
@@ -376,31 +443,39 @@ textarea {
   #About {
     width: 85%;
   }
+
   .skill-sec {
     width: 95%;
   }
+
   .timeline_box {
     width: 80% !important;
     left: 15% !important;
   }
+
   .divider_line {
     left: 5% !important;
   }
+
   .contact_container {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
   }
-  .contact_container > div {
+
+  .contact_container>div {
     width: 80%;
     text-align: justify;
   }
+
   .my_details_container {
     margin-top: 30px;
   }
+
   #submit-button {
     margin-left: 30% !important;
   }
+
   .container {
     width: 95% !important;
   }
