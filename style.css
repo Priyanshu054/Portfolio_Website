@@ -71,7 +71,7 @@ section {
 }
 
 #nameandicons {
-  margin-top: 7.5rem;
+  margin-top: 10%;
 }
 
 #social_icons a i {
@@ -181,43 +181,44 @@ section {
 
 /* Skill Levels */
 #cpp {
-  max-width: 60%;
+  width: 65%;
   background-color: rgb(240, 183, 26);
 }
 
 #java {
-  max-width: 20%;
+  width: 30%;
   background-color: rgb(173, 137, 238);
 }
 
 #python {
-  max-width: 50%;
+  width: 50%;
   background-color: rgb(248, 90, 90);
 }
 
 #html {
-  max-width: 85%;
+  width: 85%;
   background-color: rgb(80, 149, 240);
 }
 
 #css {
-  max-width: 70%;
+  width: 70%;
   background-color: rgb(200, 231, 85);
 }
 
 #javascript {
-  max-width: 40%;
+  width: 50%;
   background-color: rgb(240, 93, 183);
 }
 
 /* Education Section */
-#education {
+#education, #experience {
   width: 85%;
   position: relative;
   margin: auto;
 }
 
 .timeline {
+  position: relative;
   margin-bottom: 50px;
 }
 
@@ -236,12 +237,12 @@ section {
 
 .divider_line {
   position: absolute;
-  height: 55%;
+  height: 75%;
   width: 0;
   border: 3.2px rgb(174, 122, 241);
   border-right-style: dotted;
   left: 50%;
-  top: 25%;
+  top: 10%;
 }
 
 #aeroplane {
@@ -268,7 +269,7 @@ section {
 .course {
   font-size: 1.3rem;
   color: rgb(54, 54, 160);
-  margin-bottom: px;
+  margin-bottom: 10px;
 }
 
 .institute {
@@ -307,7 +308,7 @@ section {
 .container {
   box-sizing: border-box;
   height: auto;
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -317,8 +318,8 @@ section {
 .certificate_box {
   margin: 10px 50px 70px;
   position: relative;
-  max-height: 350px;
-  max-width: 450px;
+  max-height: 300px;
+  max-width: 400px;
   border: 2px white solid;
   border-radius: 2%;
   box-shadow: 0px 0px 10px 4px rgb(116, 110, 110);
@@ -343,8 +344,8 @@ section {
 
 .portfolio_box {
   margin: 10px 40px 30px;
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 200px;
+  max-width: 200px;
   padding: 20px;
 }
 
