@@ -4,6 +4,10 @@
   /* overflow: hidden; */
 }
 
+body {
+  font-family: 'Afacad', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,7 +50,9 @@ section {
 .Horizontal_list ul li a {
   color: rgb(205, 232, 232);
   font-size: 1.2em;
+  font-weight: 550;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .Horizontal_list nav ul li a:hover {
@@ -63,6 +69,7 @@ section {
   font-family: cursive;
   font-weight: 600;
   margin-bottom: 1.4rem;
+  font-family: 'Ubuntu', sans-serif;
   /* background: linear-gradient(to right, #120e9d 0%, #b75c11 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -112,7 +119,6 @@ section {
 /*------------------------------ About Section -----------------------------------*/
 #About {
   font-size: 1.1rem;
-  font-family: cursive;
   width: 70%;
   text-align: justify;
   color: grey;
