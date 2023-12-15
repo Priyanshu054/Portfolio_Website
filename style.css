@@ -1,6 +1,6 @@
-body {
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
   /* overflow: hidden; */
 }
 
@@ -8,11 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Background Image */
+/*------------------------------ Background Image ------------------------------------*/
 header {
-  height: 550px;
-  opacity: 0.8;
-  background-image: url("Image/apple-magic-mouse.jpg");
+  height: 32rem;
+  /* opacity: 0.8; */
+  /* background-image: url("Image/apple-magic-mouse.jpg"); */
+  background-image: url("Image/pexels-kevin-ku.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -20,18 +21,16 @@ header {
 }
 
 section {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
 }
 
 .section-heading:hover {
   background-color: #f2e5e5;
 }
 
-/* Nav bar */
+/*-------------------------------- Nav Bar ------------------------------------- */
 .Horizontal_list ul {
   margin-top: 0px;
   padding-left: 0px;
@@ -41,47 +40,52 @@ section {
 
 .Horizontal_list ul li {
   display: inline-block;
-  margin: 18px 17px 0 0;
+  margin: 20px 20px 0 0;
 }
 
 .Horizontal_list ul li a {
-  color: rgb(184, 187, 187);
-  font-size: 1.4em;
+  color: rgb(205, 232, 232);
+  font-size: 1.2em;
   text-decoration: none;
 }
 
 .Horizontal_list nav ul li a:hover {
-  color: white;
+  color: rgb(180, 193, 196);
   border-bottom: 1px solid;
 }
 
-/* Name and Icons */
+/*------------------------------ Name and Icons ------------------------------------*/
 #My_Name {
   font-size: 4rem;
   letter-spacing: 0.3rem;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: cursive;
   font-weight: 600;
   margin-bottom: 1.4rem;
+  /* background: linear-gradient(to right, #120e9d 0%, #b75c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 #My_Name:hover {
-  color: #a6a6ab;
+  color: #ffffff;
   transition: color 1s;
 }
 
 #nameandicons {
-  margin-top: 10%;
+  margin-top: 6rem;
 }
 
 #social_icons a i {
-  height: 22px;
-  width: 22px;
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
   border-radius: 50%;
-  font-size: 1.4rem;
-  padding: 6px;
-  margin-left: 25px;
+  font-size: 1.45rem;
+  text-align: center;
+  padding-top: 6px;
+  margin-left: 1rem;
   color: rgb(255, 248, 248);
 }
 
@@ -90,41 +94,37 @@ section {
 }
 
 #My_pic img {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 1px 1px 5px 2px rgb(182, 180, 180);
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px 2px rgb(189, 233, 245);
+  display: block;
+  margin: auto;
 }
 
 #My_pic {
-  height: 180px;
-  width: 180px;
+  position: relative;
   margin: -6.2rem auto 1.3rem;
+  top: 10%
 }
 
-/* About Section */
+/*------------------------------ About Section -----------------------------------*/
 #About {
   font-size: 1.1rem;
   font-family: cursive;
-  padding: 10px;
   width: 70%;
   text-align: justify;
   color: grey;
   line-height: 28px;
   margin: auto;
+  margin-bottom: 3rem;
 }
 
-/* Skills Section */
+/*------------------------------ Skills Section ------------------------------------*/
 #skills {
   background-color: rgb(226, 238, 238);
   align-items: center;
-}
-
-#skills>div {
-  margin-top: 10px;
-  margin-bottom: 40px;
 }
 
 .section-heading {
@@ -146,7 +146,7 @@ section {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .skill-display {
@@ -209,117 +209,123 @@ section {
   background-color: rgb(43, 220, 67);
 }
 
-/* Education Section */
-#education, #experience {
-  width: 85%;
+/*------------------------------ Education & Experience -----------------------------------*/
+#education,
+#experience {
   position: relative;
   margin: auto;
 }
 
+#experience {
+  background-color: rgb(226, 238, 238);
+}
+
 .timeline {
   position: relative;
-  margin-bottom: 50px;
+  width: 70%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .timeline_box {
   position: relative;
   width: 40%;
   min-height: 180px;
-  margin-bottom: 20px;
-  left: 5%;
+  margin-bottom: 2.5rem;
   text-align: right;
 }
 
 .timeline_box:nth-child(2n) {
-  left: 55%;
+  left: 60%;
 }
 
 .divider_line {
   position: absolute;
-  height: 75%;
+  height: 80%;
   width: 0;
-  border: 3.2px rgb(174, 122, 241);
+  border: 5px rgb(132, 151, 230);
   border-right-style: dotted;
   left: 50%;
-  top: 10%;
+  top: 7%;
 }
 
-#aeroplane, #car{
+#experience .divider_line {
+  height: 60%;
+  top: 15%;
+}
+
+#aeroplane,
+#car {
   position: sticky;
   top: 15%;
 }
 
-#aeroplane, #car i {
+#aeroplane,
+#car i {
   transform: rotate(90deg);
   margin: -32px -3px 0px 0px;
   display: block;
   transform: rotate(90deg);
-  color: #2857a4;
-  font-size: 1.2rem;
+  color: #315da3;
+  font-size: 1.5rem;
 }
 
 .timeline_logo>i {
-  font-size: 1.4rem;
-  margin: 0;
+  font-size: 1.5rem;
   position: absolute;
+  color: #3430a4;
   left: 1%;
 }
 
 .course {
-  font-size: 1.3rem;
-  color: rgb(54, 54, 160);
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: rgb(56, 56, 176);
+  margin-bottom: 12px;
 }
 
 .institute {
-  margin-bottom: 0px;
   color: #eb822d;
   font-weight: 400;
   font-size: 1.2rem;
-  margin: 2px;
 }
 
 .Duration {
   color: #a19999;
   font-weight: 100;
   font-size: 1.1rem;
-  margin: 0px;
+  margin: 5px 0 10px 0;
 }
 
 .edu_details {
-  font-size: 1.07rem;
-  padding: 2px;
+  font-size: 1.1rem;
+  padding-left: 5px;
   color: grey;
-  line-height: 20px;
+  line-height: 25px;
   text-align: justify;
 }
 
-/* Certificates section */
-#certificates {
-  background-color: rgb(226, 238, 238);
-}
-
+/*------------------------------ Certificates section ------------------------------------*/
 #certificates>div {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-.container {
+.certi_container {
   box-sizing: border-box;
   height: auto;
-  width: 70%;
+  width: 85%;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .certificate_box {
-  margin: 10px 50px 70px;
-  position: relative;
-  max-height: 300px;
-  max-width: 400px;
-  border: 2px white solid;
+  margin: 40px 40px;
+  max-height: 240px;
+  width: 320px;
+  min-width: 200px;
+  border: 1px white solid;
   border-radius: 2%;
   box-shadow: 0px 0px 10px 4px rgb(116, 110, 110);
 }
@@ -332,34 +338,76 @@ section {
 
 .certificate_box:hover {
   border: 3px rgb(228, 200, 205) solid;
-  transform: scale(110%);
+  transform: scale(120%);
   transition: ease-in-out 0.5s;
 }
 
-/* Portfolio Section */
+/*------------------------------ Portfolio Section ------------------------------------*/
 #portfolio {
+  background-color: rgb(226, 238, 238);
+}
+
+.portfolio_container {
+  box-sizing: border-box;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-bottom: 3rem;
 }
 
 .portfolio_box {
-  margin: 10px 40px 30px;
-  max-height: 200px;
-  max-width: 200px;
-  padding: 20px;
+  margin: 45px 40px;
+  position: relative;
+  max-height: 300px;
+  width: 460px;
+  min-width: 300px;
+  border: 1px white solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 4px rgb(116, 110, 110);
 }
 
-.portfolio_box:hover {
-  box-shadow: 0px 0px 5px 2px rgb(102, 91, 91);
-  background-color: rgb(221, 226, 226);
-  opacity: 0.7;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay p {
+  margin-top: 20%;
+  text-align: center;
+  text-wrap: wrap;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+  color: #000000;
+  /* Text color */
+}
+
+.portfolio_box:hover img {
+  filter: blur(2px);
+  /* Adjust the blur amount */
+}
+
+.portfolio_box:hover .overlay {
+  box-shadow: 0px 0px 10px 2px rgb(102, 91, 91);
+  background-color: rgb(199, 194, 194);
+  opacity: 0.6;
 }
 
 .portfolio_box img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
-/* Contact Section */
+/*------------------------------ Contact Section ------------------------------------*/
 #contact {
   background-color: #0abcf9;
   background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
@@ -376,7 +424,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .contact_box {
@@ -403,15 +451,16 @@ textarea {
   width: 90%;
   line-height: 1.7;
   font-size: 1.05rem;
+  font-family: sans-serif;
 }
 
 #contact_form button {
   background: transparent;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border: 2px solid white;
   margin-top: 6%;
-  margin-left: 35%;
-  border-radius: 12px;
+  margin-left: 32%;
+  border-radius: 10px;
   color: white;
   font-family: sans-serif;
   font-weight: 700;
@@ -426,6 +475,17 @@ textarea {
   color: #266acfe0;
 }
 
+.my_details_container p {
+  margin: 10px 0 20px 0;
+  line-height: 20px;
+  font-size: 1rem;
+}
+
+.my_details_container h3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
 .my-details-info {
   margin: 10px;
 }
@@ -435,7 +495,7 @@ textarea {
 }
 
 .my-details-info i {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 /* Media Queries */
@@ -474,9 +534,5 @@ textarea {
 
   #submit-button {
     margin-left: 30% !important;
-  }
-
-  .container {
-    width: 95% !important;
   }
 }
