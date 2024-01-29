@@ -14,10 +14,12 @@ html {
 
 /*------------------------------ Background Image ------------------------------------*/
 header {
-  height: 32rem;
+  height: 31rem;
   /* opacity: 0.8; */
   /* background-image: url("Image/apple-magic-mouse.jpg"); */
   background-image: url("Image/pexels-kevin-ku.jpg");
+  /* background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+  /* background-image: url(""); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -31,7 +33,9 @@ section {
 }
 
 .section-heading:hover {
-  background-color: #f2e5e5;
+  /* background-color: #d4cef3; */
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 /*-------------------------------- Nav Bar ------------------------------------- */
@@ -60,6 +64,10 @@ section {
   border-bottom: 1px solid;
 }
 
+.Horizontal_list nav ul li:hover {
+  transform: translateY(2px);
+}
+
 /*------------------------------ Name and Icons ------------------------------------*/
 #My_Name {
   font-size: 4rem;
@@ -76,7 +84,7 @@ section {
 }
 
 #My_Name:hover {
-  color: #ffffff;
+  color: #bdb9b9;
   transition: color 1s;
 }
 
@@ -101,8 +109,8 @@ section {
 }
 
 #My_pic img {
-  height: 10rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0px 0px 10px 2px rgb(189, 233, 245);
