@@ -39,3 +39,13 @@ function checkScroll() {
 }
 
 window.addEventListener('scroll', checkScroll);
+
+// Menu toggle script for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('.Horizontal_list nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        navUl.classList.toggle('show');
+    });
+});

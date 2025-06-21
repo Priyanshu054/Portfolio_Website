@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+    #About {
+        width: 85%;
+    }
+
+    .skill-sec {
+        width: 95%;
+    }
+
+    .timeline_box {
+        width: 80% !important;
+        left: 15% !important;
+    }
+
+    .divider_line {
+        left: 5% !important;
+    }
+
+    .contact_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .contact_container>div {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .my_details_container {
+        margin-top: 30px;
+    }
+
+    #submit-button {
+        margin-left: 30% !important;
+    }
+}
